@@ -6,7 +6,9 @@
   "scripts": {
     "test": "npm run format",
     "format": "npm run format:prettier",
-    "format:prettier": "npx prettier --config .prettierrc \"./src/**/*.{ts,css,less,js}\" --write"
+    "format:prettier": "npx prettier --config .prettierrc \"./src/**/*.{ts,css,less,js}\" --write",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,9 +38,11 @@
     "request": "^2.88.0",
     "restify": "^8.0.0",
     "winston": "^3.2.1",
-    "winston-daily-rotate-file": "^3.9.0"
+    "winston-daily-rotate-file": "^3.9.0",
+    "snyk": "^1.192.0"
   },
   "devDependencies": {
     "prettier": "1.18.2"
-  }
+  },
+  "snyk": true
 }
