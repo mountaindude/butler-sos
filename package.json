@@ -46,7 +46,7 @@
         "js-yaml": "^4.1.0",
         "lodash.clonedeep": "^4.5.0",
         "luxon": "^3.3.0",
-        "mqtt": "^4.3.7",
+        "mqtt": "^5.0.0",
         "pg": "^8.10.0",
         "prom-client": "^14.2.0",
         "qrs-interact": "^6.3.1",
