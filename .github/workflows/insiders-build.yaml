@@ -279,7 +279,7 @@ jobs:
                   github.repository_owner == 'ptarmiganlabs' &&
                   matrix.os == 'ubuntu-latest'
               continue-on-error: true # To make sure that SARIF upload gets called
-              uses: snyk/actions/node@9adf32b1121593767fc3c057af55b55db032dc04 # master
+              uses: snyk/actions/node@b075801f26076be9bb50521154cafab73f44da0c # master
               env:
                   # This is where you will need to introduce the Snyk API token created with your Snyk account
                   SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
